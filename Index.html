@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Assignment 4</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- External JavaScript with defer attribute -->
+    <script src="script.js" defer></script>
+</head>
+<body>   
+    <!-- Game container -->
+    <div id="game-container">
+        <!-- Column 1 -->
+        <div class="column1">
+            <!-- Title -->
+            <div>
+                <h1>Assignment 4 - Snake Game</h1>
+            </div>
+            <!-- Game instructions -->
+            <div id="instruction">
+                <h3>The objective of the game is to control the snake to eat food, grow longer, and avoid colliding with walls or itself.</h3>
+                <span id="Button"></span>
+                <ul>
+                    <!-- Game instructions list -->
+                    <li>Press Start button to start game.</li>
+                    <li>Use the arrow keys (up, down, left, right) to control the direction of the snake.</li>
+                    <li>Press the up arrow key to move the snake upwards.</li>
+                    <li>Press the down arrow key to move the snake downwards.</li>
+                    <li>Press the left arrow key to move the snake to the left.</li>
+                    <li>Press the right arrow key to move the snake to the right.</li>
+                    <li>If snake hits the border then it will die</li>
+                    <li>If you want to restart the game click start button.</li>
+                </ul>
+            </div>
+            <!-- Start button -->
+            <div id="start_button" >
+                <span>Start Game</span>
+            </div>
+            <!-- Score container -->
+            <div id="score-container">
+                <span id="score">Score: 0</span> <br>
+                <span id="high-score">High Score: 0</span>
+            </div>
+
+        </div>
+        <!-- Column 2 -->
+        <div class="column2">
+            <!-- SVG canvas for the game -->
+            <svg id="gameCanvas" width="560" height="560"></svg>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <!-- Footer text -->
+        <p class="text-center">&#169; 2024 Rohan Patel, Mohawk College</p>
+    </footer>      
+</body>
+</html>
